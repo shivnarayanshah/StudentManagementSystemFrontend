@@ -43,7 +43,6 @@ const AddStudent = () => {
           course: "",
         }}
         onSubmit={async (val) => {
-          console.log(val);
           try {
             const res = await addstudent({ token, data: val }).unwrap();
             toast.success(res.message);

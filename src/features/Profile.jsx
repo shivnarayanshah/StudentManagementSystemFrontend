@@ -45,7 +45,6 @@ const Profile = () => {
     { email: userData?.email, token },
     { skip: !id }
   );
-  console.log(studentData);
 
   const addProfilepic = async (image) => {
     try {

@@ -28,7 +28,6 @@ const Profile = () => {
     isLoading: isUserLoading,
     error: userError,
   } = useGetUserByIdQuery({ id, token }, { skip: !id });
-  // console.log(userData);
 
   const [addProfile, { isLoading: addProfileLoading, error: addProfileError }] =
     useAddProfileMutation();

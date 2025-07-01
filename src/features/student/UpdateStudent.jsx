@@ -33,7 +33,8 @@ const UpdateStudent = () => {
     token,
   });
 
-  const [updateStudent, { isLoading: loading }] = useUpdateStudentMutation();
+  const [updateStudent, { isLoading: updateLoading }] =
+    useUpdateStudentMutation();
 
   if (isLoading) return <p className="text-center">Loading...</p>;
   if (error)
@@ -136,7 +137,7 @@ const UpdateStudent = () => {
               <Button
                 style={{ backgroundColor: "#2A6047" }}
                 type="submit"
-                loading={isLoading}
+                loading={updateLoading}
               >
                 Update
               </Button>

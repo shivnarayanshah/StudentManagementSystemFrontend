@@ -22,7 +22,7 @@ const formValidation = Yup.object({
 const AddStudent = () => {
   const { user } = useSelector((state) => state.userSlice);
   const token = user.token;
-  const [addstudent, { isloading }] = useAddStudentMutation();
+  const [addstudent, { isLoading }] = useAddStudentMutation();
 
   const navigate = useNavigate();
   return (
@@ -121,7 +121,7 @@ const AddStudent = () => {
               <Button
                 style={{ backgroundColor: "#2A6047" }}
                 type="submit"
-                loading={isloading}
+                loading={isLoading}
               >
                 Submit
               </Button>

@@ -130,7 +130,15 @@ const Profile = () => {
                     }
                   />
 
-                  <Button type="submit" style={{ backgroundColor: "#2A6047" }}>
+                  <Button
+                    type="submit"
+                    style={{ backgroundColor: "#2A6047" }}
+                    loading={
+                      profileData?.profile
+                        ? updateProfileLoading
+                        : addProfileLoading
+                    }
+                  >
                     {profileData?.profile
                       ? "Update Profile Pic"
                       : "Add Profile Pic"}

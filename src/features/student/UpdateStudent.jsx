@@ -35,9 +35,12 @@ const UpdateStudent = () => {
 
   const [updateStudent, { isLoading: loading }] = useUpdateStudentMutation();
 
-  if (isLoading) return <p>Loading...</p>;
-  if (error) return <p>Error loading product: {error.message}</p>;
-  if (!data) return <p>No product data found</p>;
+  if (isLoading) return <p className="text-center">Loading...</p>;
+  if (error)
+    return (
+      <p className="text-center">Error loading product: {error.message}</p>
+    );
+  if (!data) return <p className="text-center">No product data found</p>;
 
   return (
     <div className="p-4 lg:w-[650px] sm:w-[450px]  mx-auto border-[#2A6047] shadow-2xl mt-4 rounded-2xl border-2 mb-4 ">

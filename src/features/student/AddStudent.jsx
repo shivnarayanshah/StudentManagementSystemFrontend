@@ -118,7 +118,11 @@ const AddStudent = () => {
             )}
 
             <div className="flex justify-end">
-              <Button style={{ backgroundColor: "#2A6047" }} type="submit">
+              <Button
+                style={{ backgroundColor: "#2A6047" }}
+                type="submit"
+                loading={isloading}
+              >
                 Submit
               </Button>
             </div>

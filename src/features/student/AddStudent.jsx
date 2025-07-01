@@ -40,7 +40,7 @@ const AddStudent = () => {
           name: "",
           email: "",
           age: "",
-          course: [],
+          course: "",
         }}
         onSubmit={async (val) => {
           console.log(val);

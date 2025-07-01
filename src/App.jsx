@@ -10,7 +10,7 @@ import UpdateStudent from "./features/student/UpdateStudent.jsx";
 import StudentList from "./features/student/StudentList.jsx";
 import AdminProtectedRoute from "./components/AdminProtectedRoute.jsx";
 import UserProtectedRoute from "./components/UserProtectedRoute.jsx";
-import PublicRoute from "./components/Publicroute.jsx";
+import PublicRoute from "./components/PublicRoute.jsx";
 
 function App() {
   const router = createBrowserRouter([

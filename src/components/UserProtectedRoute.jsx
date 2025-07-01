@@ -4,8 +4,6 @@ import { Navigate } from "react-router";
 const UserProtectedRoute = ({ children }) => {
   const { user } = useSelector((state) => state.userSlice);
 
-  console.log(user);
-
   if (!user || (user?.role !== "user" && user?.role !== "admin")) {
     return <Navigate to={"/login"} replace={true} />;
   }
